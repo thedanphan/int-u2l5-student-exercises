@@ -16,16 +16,60 @@
      but scroll and find the one that simply says "Nav" -->
 
 <!-- 3. Copy the HTML code and paste it below. Run your code - what do you see?  -->
-
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
 <!-- 4. Auto-format your page to clean things up. -->
 
 <!-- 5. Next, in the search bar, type "cards" and press enter. Copy the "Example" HTML and paste below. -->
 
 <!-- 6. Find an image you like from a Google search - put this as the src for the img tag. -->
-
+<div class="card" style="width: 18rem;">
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRYCT-vJz9Y4gWlWMZrnoxYpGkdHT4EdiIYZ3WtLBgqX5PSD1LJVMm0kI3csL1JyLLTBsmSf8_fnzM3wDj1bu3p9ewZfFLwlU0SVgo55Za" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 <!-- 7. Scroll through the side menu and see what else you can add - take a look at the options in the "Components" section.  -->
-
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+  <span class="visually-hidden" role="status">Loading...</span>
+</button>
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+  <span role="status">Loading...</span>
+</button>
 <!-- 8. Try out some new code and have fun! 😊 -->
-    
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
 </body>
 </html>
